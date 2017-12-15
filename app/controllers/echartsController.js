@@ -43,10 +43,7 @@ app.controller('BarChartController', function ($scope,$http) {
     var xxx={name:'hhh',datapoints:array}
     $scope.data = [xxx];
 
-
 });
-
-
 
 
 })();

@@ -32,12 +32,12 @@ app.service('userService',['$http','$q', function ($http,$q) {
             then(function(data) {
                 //sth
             }).catch(function(data) {
-                alert('Impossible de sauvegarder le Dashboard');
+                alert('服务器异常，保存失败');
             });
         */
     }
 
-    //To get the User Dashboard Configuration
+    //To get the User Dashboard Configuration；获取用户面板信息
     function RecoverDashboard(){
 
         var base = getBaseDashboard();
@@ -48,7 +48,7 @@ app.service('userService',['$http','$q', function ($http,$q) {
             success(function(data) {
                 //STh to do
             }).error(function(data) {
-                alert('Impossible de récupéré les données du dashboard');
+                alert('服务器异常，获取失败');
             });
         */
         var widgets = [{col:0, row:0, sizeY:1, sizeX:2, name:"Widget 1", id:0, content:"array", type:"tyre"}, {col:2, row:0, sizeY:1, sizeX:1, name:"Widget 2", id:1, content:"image", type:"whatever"}, {name:"New Widget", sizeX:2, sizeY:2, id:2, row:0, col:3, content:"map"}, {name:"New Widget", sizeX:3, sizeY:1, id:3, row:1, col:0, content:"graph"}, {name:"New Widget", sizeX:1, sizeY:1, id:4, row:2, col:0, content:"chart", type:"tyre"}, {name:"New Widget", sizeX:3, sizeY:2, id:5, row:2, col:1, content:"array", type:"tyre with searchTab"}, {name:"New Widget", sizeX:1, sizeY:1, id:6, row:2, col:4, content:"image", type:"whatever"}]

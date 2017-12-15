@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * generate directive link function
+ * generate echarts directive link function
  *
  * @param {Service} $http, http service to make ajax requests from angular
  * @param {String} type, chart type

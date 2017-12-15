@@ -1,4 +1,4 @@
-// app为此js的文件名
+
 app = angular.module('app', ['gridster', 'ui.bootstrap', 'ngRoute','nvd3ChartDirectives',"leaflet-directive","chart-directive"])
 	.config(['$routeProvider',
 		function($routeProvider) {
