@@ -1,0 +1,79 @@
+<div>
+	<form name="_form" class="form-horizontal" ng-submit="submit(_form)">
+		<div class="modal-header">
+			<button type="button" class="close" ng-click="dismiss()" aria-hidden="true">&times;</button>
+			<h3>资源框设置</h3>
+		</div>
+
+		<div class="modal-body">
+			<div class="form-group" ng-class="{error: _form.name.$error && _form.submitted}">
+				<label class="control-label col-lg-3 col-md-3">名称</label>
+				<div class="col-lg-9 col-md-9">
+					<input name="name" type="text" ng-model="form.name" class="form-control" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="form-group" ng-class="{error: _form.sizeX.$error && _form.submitted}">
+						<label class="control-label col-lg-6 col-md-6">宽度</label>
+						<div class="col-lg-6 col-md-6">
+							<input name="sizeX" ng-model="form.sizeX" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="form-group">
+						<label class="control-label col-lg-6 col-md-6">高度</label>
+						<div class="col-lg-6 col-md-6">
+							<input name="sizeY" ng-model="form.sizeY" class="form-control" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="form-group" ng-class="{error: _form.sizeX.$error && _form.submitted}">
+						<label class="control-label col-lg-6 col-md-6">行数</label>
+						<div class="col-lg-6 col-md-6">
+							<input name="col" ng-model="form.col" class="form-control" />
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="form-group">
+						<label class="control-label col-lg-6 col-md-6">列数</label>
+						<div class="col-lg-6 col-md-6">
+							<input name="row" ng-model="form.row" class="form-control" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group" ng-class="{error: _form.content.$error && _form.submitted}">
+					<label class="control-label col-lg-3 col-md-3">类型</label>
+					<div class="col-lg-9 col-md-9">
+						<select name="content" ng-model="form.content" class="form-control">
+							<option ng-repeat="value in ContentList" value="{{value}}">{{value}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row" ng-show="dispTypelist">
+				<div class="form-group" ng-class="{error: _form.content.$error && _form.submitted}">
+					<label class="control-label col-lg-3 col-md-3">内容</label>
+					<div class="col-lg-9 col-md-9">
+						<select name="type" ng-model="form.type" class="form-control">
+							<option ng-repeat="value in typeList" value="{{value}}">{{value}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-footer">
+			<a ng-click="remove()" class="btn btn-danger pull-left" tabindex="-1"><i class="glyphicon glyphicon-trash"></i>删除</a>
+			<a ng-click="dismiss()" class="btn btn-default" tabindex="-1"><i class="glyphicon glyphicon-remove"></i>取消</a>
+			<button type="submit" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-ok"></i>保存</button>
+		</div>
+	</form>
+</div>

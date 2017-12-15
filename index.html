@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>angular-gridster</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css" />
+    <link rel="stylesheet" href="demo/css/style.css" />
+    <link rel="stylesheet" href="demo/css/nvd3.min.css" >
+    <link rel="stylesheet" href="demo/css/leaflet.css" >
+    <link rel="stylesheet" href="demo/css/font-awesome.min.css" >
+</head>
+
+<body ng-app="app">
+
+    <div class="row" ng-controller="RootCtrl">
+        <div class="col-md-1"></div>
+        <div class="container col-md-10" ng-view></div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <!-- those shoud be first -->
+    <script src="script/jquery.min.js"></script>
+    <script src="script/leaflet.js"></script>
+
+    <!-- angular dependency -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="demo/angular/angular-route.min.js"></script>
+
+    <!-- App lib -->
+    <script src="app/app.js"></script>
+    
+    <script src="app/controllers/mainController.js"></script>
+    <script src="app/controllers/dashboardController.js"></script>
+    <!--echarts controllers-->
+    <script src="app/controllers/echartsControllers/line.js"></script>
+    <script src="app/controllers/echartsControllers/bar.js"></script>
+    <script src="app/controllers/echartsControllers/pie.js"></script>
+
+    <!--services-->
+    <script src="app/services/ArrayService.js"></script>
+    <script src="app/services/graphService.js"></script>
+    <script src="app/services/userService.js"></script>
+    <script src="app/services/widgetService.js"></script>
+
+    <script src="app/directives/ArrayDirective.js"></script>
+    <script src="app/directives/dynCustomDirective.js"></script>
+    <!--echarts directives-->
+    <script src="app/directives/chart-directive.js"></script>
+    <!-- Other Lib -->
+    <script src="script/angular-gridster.js"></script>
+    <script src="script/ui-bootstrap-tpls.min.js"></script>
+    <script src="script/d3.min.js"></script>
+    <script src="script/nvd3.min.js"></script>
+    <script src="script/angularjs-nvd3-directives.js"></script>
+    <script src="script/angular-leaflet-directive.min.js"></script>
+    <script src="bower_components/angular-echarts/dist/angular-echarts.js"></script>
+    <!--echarts 依赖lodash-->
+    <script src="script/lodash.js"></script>
+
+    <!--echarts-->
+    <script src="script/echarts.js"></script>
+
+
+
+
+</body>
+
+</html>

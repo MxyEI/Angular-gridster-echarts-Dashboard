@@ -1,0 +1,29 @@
+
+<form ng-show="searchtab">
+	<div class="form-group">
+		<div class="input-group">
+			<div class="input-group-addon"><i class="fa fa-search"></i>
+			</div>
+			<input type="text" class="form-control" placeholder="Search da Fish" ng-model="searchFish">
+		</div>      
+	</div>
+</form>
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<td ng-repeat="item in dataTabTitle">
+				<a ng-click="$parent.sortType = item.column; $parent.sortReverse = !sortReverse">
+					{{ item.title}}
+					<span ng-show="sortType == '{{item.column}}' && !sortReverse" class="fa fa-caret-down"></span>
+					<span ng-show="sortType == '{{item.column}}' && sortReverse" class="fa fa-caret-up"></span>
+				</a>
+			</td>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr ng-repeat="item in dataTab | orderBy:sortType:sortReverse | filter:searchFish">
+			<td ng-repeat="(key, value) in item">{{value}}</td>
+		</tr>
+	</tbody>
+</table>

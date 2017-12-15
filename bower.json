@@ -1,0 +1,35 @@
+{
+  "name": "angular-gridster-dashboard",
+  "version": "1.0.0",
+  "homepage": "http://btorg.org",
+  "authors": [
+    "1486157956@qq.com"
+  ],
+  "description": "Angular directives for Gridster.js and dashboard",
+  "main": "lib/angular-gridster.js",
+  "keywords": [
+    "angular",
+    "gridster",
+    "directives",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gridster": "~0.2.1",
+    "jQuery": "~2.0.3",
+    "angular":"1.2.9",
+    "bootstrap": "~3.3.4",
+    "angular-ui-router": "1.0.10",
+    "angular-echarts": "1.0.2",
+    "angular-ui-bootstrap": "0.10.0",
+    "angular-gridster": "*"
+
+  }
+}
