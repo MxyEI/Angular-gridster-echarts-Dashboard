@@ -27,7 +27,7 @@
     "angular":"1.2.9",
     "bootstrap": "~3.3.4",
     "angular-ui-router": "1.0.10",
-    "angular-echarts": "1.0.2",
+    "echarts-angular":"*",
     "angular-ui-bootstrap": "0.10.0",
     "angular-gridster": "*"
 
