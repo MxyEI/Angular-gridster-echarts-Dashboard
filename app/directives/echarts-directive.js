@@ -1,7 +1,7 @@
 /**
- * Created by wangdongqiang on 2016/4/11.
+ * Created by mxy on 2017/12/11.
  */
-angular.module('chart-directive', [])
+angular.module('echarts-directive', [])
     .directive('chartLine', function(){
         return {
             restrict: 'EA',

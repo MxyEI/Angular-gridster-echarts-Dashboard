@@ -1,5 +1,5 @@
 
-app = angular.module('app', ['gridster', 'ui.bootstrap', 'ngRoute','nvd3ChartDirectives',"leaflet-directive","chart-directive"])
+app = angular.module('app', ['gridster', 'ui.bootstrap', 'ngRoute','nvd3ChartDirectives',"leaflet-directive","echarts-directive"])
 	.config(['$routeProvider',
 		function($routeProvider) {
 			$routeProvider
