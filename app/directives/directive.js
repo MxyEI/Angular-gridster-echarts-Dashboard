@@ -10,7 +10,7 @@ function getLinkFunction($http, theme, util, type) {
     return function (scope, element, attrs) {
         scope.config = scope.config || {};
 
-        var ndWrapper  = element.find('div')[0],
+        var ndWrapper  = element.find('div')[4],
             ndParent = element.parent()[0],
             parentWidth = ndParent.clientWidth,
             parentHeight = ndParent.clientHeight,
