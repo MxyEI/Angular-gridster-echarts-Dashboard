@@ -4,15 +4,16 @@ angular.module('app')
 	function($scope, $timeout,$compile,graphService,userService) {
 		//Options for Gridster system
 		$scope.gridsterOptions = {
-			margins: [20, 20],
-			columns: 5,
-			draggable: {
-				handle: 'h3'
 
-			},
-            resizable: {
-                enabled: true
-            }
+            // margins: [20, 20],
+            // columns: 5,
+            // draggable: {
+				// handle: 'h3'
+            //
+            // },
+            // resizable: {
+            //     enabled: true
+            // }
 		};
 
 		$scope.dispTypelist = false;

@@ -71,8 +71,14 @@ bower install执行完后会出现bower_components文件夹，查看angular-grid
 
 ![ng-gridster](http://imgmxy.oss-cn-beijing.aliyuncs.com/Blogimg/nggridsterreadme.png#shadow)
 
+
+dashboardController.js中可以自定义面板配置如是否可拖动、是否可伸缩、拖动手柄、面板默认大小等等。
+想查看原生gridster效果请移步http://www.jq22.com/yanshi2145
+
+这是angular-gridster配置信息
+
 ```
-$scope.gridsterOpts = {
+$scope.gridsterOptions = {
 	columns: 6, // the width of the grid, in columns
 	pushing: true, // whether to push other items out of the way on move or resize
 	floating: true, // whether to automatically float items up so they stack (you can temporarily disable if you are adding unsorted items with ng-repeat)
@@ -200,5 +206,12 @@ scope中的数据：
         方案1. 增加图表显示区域的宽高；
         方案2. 将origin置为true，通过更全的参数调整渲染布局；
         方案3. 将legend隐藏，在图标DOM旁边自定义legendDOM。
+
+
+本例子中添加echarts图表不会随着资源框的伸缩重绘canvas，这是因为echarts的canvas绘图取得宽高是父级容器的宽高去掉px或%，
+这样我就得很麻烦的重写echarts指令集，我会在有业余时间的时候完善指令，有小伙伴愿意将完善后的代码提交的话也可以联系我，
+热烈欢迎purchase，star更好。
+
+
 
 不明白的或者发现错误可以联系我，欢迎吐槽。1486157956@qq.com
