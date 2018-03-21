@@ -1,0 +1,28 @@
+{
+  "name": "echarts-angular",
+  "version": "1.0.0",
+  "description": "angular directive for ECharts",
+  "main": "dist/echarts-angular.min.js",
+  "authors": [
+    "tu.wenpan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "echarts",
+    "echarts-angular"
+  ],
+  "homepage": "https://github.com/twp0217/echarts-angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "echarts": ">=3.4.0",
+    "angular": ">=1.2.0"
+  }
+}

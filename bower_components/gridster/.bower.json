@@ -1,0 +1,14 @@
+{
+  "name": "gridster",
+  "homepage": "https://github.com/ducksboard/gridster.js",
+  "version": "0.2.1",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.1",
+    "commit": "849c42d3be35601949616dad2103f8b64b131f8c"
+  },
+  "_source": "https://github.com/ducksboard/gridster.js.git",
+  "_target": "~0.2.1",
+  "_originalSource": "gridster"
+}
